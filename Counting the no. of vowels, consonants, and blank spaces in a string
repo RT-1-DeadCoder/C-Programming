@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    char a[50];
+    int i,l,v=0,c=0,b=0;
+    printf("Enter the string: ");
+    gets(a);
+    l=strlen(a);
+    for(i=0;i<l;i++)
+    {
+        if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u'||a[i]=='A'||a[i]=='E'||a[i]=='I'||a[i]=='O'||a[i]=='U')
+            v++;
+        if(a[i]==' ')
+            b++;
+    }
+    c=l-v-b;
+    printf("No. of Vowels=%d\nNo.of Consonants=%d\nNo. of Blank Spaces=%d\n",v,c,b);
+}
